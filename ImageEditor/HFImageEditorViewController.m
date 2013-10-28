@@ -10,12 +10,10 @@ static const NSTimeInterval kAnimationIntervalReset = 0.25;
 static const NSTimeInterval kAnimationIntervalTransform = 0.2;
 
 @interface HFImageEditorViewController ()
-@property (nonatomic,retain) UIImageView *imageView;
 @property (retain, nonatomic) IBOutlet UIPanGestureRecognizer *panRecognizer;
 @property (retain, nonatomic) IBOutlet UIRotationGestureRecognizer *rotationRecognizer;
 @property (retain, nonatomic) IBOutlet UIPinchGestureRecognizer *pinchRecognizer;
 @property (retain, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
-@property (nonatomic,retain) IBOutlet UIView<HFImageEditorFrame> *frameView;
 
 @property(nonatomic,assign) NSUInteger gestureCount;
 @property(nonatomic,assign) CGPoint touchCenter;
