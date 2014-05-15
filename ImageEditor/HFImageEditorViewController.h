@@ -22,6 +22,7 @@ typedef void(^HFImageEditorDoneCallback)(UIImage *image, BOOL canceled);
 @property(nonatomic,assign) CGFloat maximumScale;
 @property (nonatomic,retain) IBOutlet UIView<HFImageEditorFrame> *frameView;
 @property (nonatomic,retain) UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @property(nonatomic,assign) BOOL panEnabled;
 @property(nonatomic,assign) BOOL rotateEnabled;
